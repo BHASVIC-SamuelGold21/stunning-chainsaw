@@ -6,6 +6,7 @@ public class RunTime : MonoBehaviour
 {
 float timerInSecond = 0.0f;
 private float levelTimer = 0.0f;
+public float totalTimer;
 private bool updateTimer = false;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,6 @@ private bool updateTimer = false;
         if(updateTimer == true){
             levelTimer += 1* Time.deltaTime;
         }
-        Debug.Log(levelTimer);
+
     }
 }
