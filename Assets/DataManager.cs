@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 public class DataManager : MonoBehaviour
 {
-    //This Scipt is for assigning a random starting location for the player
     void Start()
     {
         
@@ -12,6 +11,6 @@ public class DataManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
+    } 
 }
+

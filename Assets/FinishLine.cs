@@ -6,16 +6,18 @@ public class FinishLine : MonoBehaviour
 {
 public GameObject enemy; // get enemy components
 public Transform finish; // get transform component
+public Material transparentMat;
+private Renderer ren;
 void Start() {
+    ren = GetComponent<Renderer>();
 }
 void Update() //update is called every frame
 { 
     if(enemy.transform.position.y <= finish.position.y) //when the enemy position is below finish line on the y axis
     {
-        Destroy(enemy); //removes enemy
+        ren.material = transparentMat; //changes the material to invisible
         //also add checks for time and other stats here at that stage
-    }
 
-	
+    }
 }
 }
