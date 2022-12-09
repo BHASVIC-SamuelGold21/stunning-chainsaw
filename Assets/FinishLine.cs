@@ -4,20 +4,27 @@ using UnityEngine;
 
 public class FinishLine : MonoBehaviour
 {
-public GameObject enemy; // get enemy components
 public Transform finish; // get transform component
-public Material transparentMat;
-private Renderer ren;
+public Material transparentMat; //transparent material for finish
+public float levelTimer = 0.0f; //public runtime for dataManager
+private bool updateTimer = false;
+private Renderer ren; //renderer component
 void Start() {
     ren = GetComponent<Renderer>();
+    updateTimer = true;
+    levelTimer = 0.0f;
 }
 void Update() //update is called every frame
 { 
-    if(enemy.transform.position.y <= finish.position.y) //when the enemy position is below finish line on the y axis
+    if(updateTimer == true)
+    {
+        levelTimer += 1* Time.deltaTime;
+        Debug.Log(levelTimer);
+    }
+    if(transform.position.y <= finish.position.y) //when the enemy position is below finish line on the y axis
     {
         ren.material = transparentMat; //changes the material to invisible
-        //also add checks for time and other stats here at that stage
-
+        updateTimer = false;
     }
 }
 }
