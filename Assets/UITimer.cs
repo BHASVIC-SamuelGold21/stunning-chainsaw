@@ -12,15 +12,14 @@ public class UITimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var FinishLine = GameObject.Find("Player").GetComponent<FinishLine>();
-        runTime = FinishLine.levelTimer;
     }
     
 
     // Update is called once per frame
     void Update()
     {
-
+        var FinishLine = GameObject.Find("Player").GetComponent<FinishLine>();
+        runTime = FinishLine.levelTimer;
         strngRunTime = runTime.ToString();
         playerTimer.text = strngRunTime;
     }
