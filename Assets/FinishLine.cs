@@ -7,14 +7,11 @@ public class FinishLine : MonoBehaviour
     public Transform finish; // get transform component
     public Material transparentMat; //transparent material for finish
     public float levelTimer = 0; //public runtime for dataManager
-    private bool updateTimer = false;
     public bool passFinish = false;
     private bool finalTimeRecorded;
-    private Renderer ren; //renderer componentA
-    private int i = 1;
+    private Renderer ren; //renderer component
     void Start() {
         ren = GetComponent<Renderer>();
-        updateTimer = true;
         levelTimer = 0.0f;
         passFinish = false;
     }
@@ -30,7 +27,6 @@ public class FinishLine : MonoBehaviour
             ren.material = transparentMat; //changes the material to invisible
             passFinish = true;
             finalTimeRecorded = true;
-
         }
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RunTime : MonoBehaviour
 {
-float timerInSecond = 0.0f;
 private float levelTimer = 0.0f;
 public float totalTimer;
 private bool updateTimer = false;

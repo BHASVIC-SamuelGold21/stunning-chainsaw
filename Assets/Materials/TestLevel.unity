@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f1106d35127c74a99d1477a702dda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finish: {fileID: 0}
+  finish: {fileID: 1930020170}
   transparentMat: {fileID: 2100000, guid: 2313e15ebdd41c144ae0988c1fb7bff7, type: 2}
   levelTimer: 0
   passFinish: 1
@@ -638,6 +638,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c14cf01eedbf99949af9ee3f3815e1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalTime: []
+  enemyOrder: []
+  sorted: 0
 --- !u!4 &668697925
 Transform:
   m_ObjectHideFlags: 0
@@ -793,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f1106d35127c74a99d1477a702dda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finish: {fileID: 0}
+  finish: {fileID: 1930020170}
   transparentMat: {fileID: 2100000, guid: 2313e15ebdd41c144ae0988c1fb7bff7, type: 2}
   levelTimer: 0
   passFinish: 1
@@ -1034,7 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f1106d35127c74a99d1477a702dda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finish: {fileID: 0}
+  finish: {fileID: 1930020170}
   transparentMat: {fileID: 2100000, guid: 2313e15ebdd41c144ae0988c1fb7bff7, type: 2}
   levelTimer: 0
   passFinish: 1
@@ -1179,7 +1182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f1106d35127c74a99d1477a702dda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finish: {fileID: 0}
+  finish: {fileID: 1930020170}
   transparentMat: {fileID: 2100000, guid: 2313e15ebdd41c144ae0988c1fb7bff7, type: 2}
   levelTimer: 0
   passFinish: 1
@@ -1612,7 +1615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f1106d35127c74a99d1477a702dda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finish: {fileID: 0}
+  finish: {fileID: 1930020170}
   transparentMat: {fileID: 2100000, guid: 2313e15ebdd41c144ae0988c1fb7bff7, type: 2}
   levelTimer: 0
   passFinish: 1
@@ -2052,7 +2055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9f1106d35127c74a99d1477a702dda6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finish: {fileID: 0}
+  finish: {fileID: 1930020170}
   transparentMat: {fileID: 2100000, guid: 2313e15ebdd41c144ae0988c1fb7bff7, type: 2}
   levelTimer: 0
   passFinish: 1
@@ -2186,7 +2189,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 991272063}
-  - {fileID: 1891887811}
+  - {fileID: 1914337100}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2203,7 +2206,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875497133}
   m_CullTransparentMesh: 1
---- !u!1 &1891887810
+--- !u!1 &1914337099
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2211,23 +2214,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1891887811}
-  - component: {fileID: 1891887813}
-  - component: {fileID: 1891887812}
+  - component: {fileID: 1914337100}
+  - component: {fileID: 1914337102}
+  - component: {fileID: 1914337101}
   m_Layer: 5
-  m_Name: End Text
+  m_Name: Scoreboard (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1891887811
+--- !u!224 &1914337100
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891887810}
+  m_GameObject: {fileID: 1914337099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2241,13 +2244,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1891887812
+--- !u!114 &1914337101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891887810}
+  m_GameObject: {fileID: 1914337099}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -2261,7 +2264,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2330,13 +2333,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1891887813
+--- !u!222 &1914337102
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1891887810}
+  m_GameObject: {fileID: 1914337099}
   m_CullTransparentMesh: 1
 --- !u!1 &1930020169
 GameObject:
