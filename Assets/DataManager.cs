@@ -8,13 +8,14 @@ public class DataManager : MonoBehaviour
     public bool sorted = false;
     public bool finish;
     private float runTime;
-    private int numberOfEnemies = 5; //later change it so that the value depends on num of enemies in unity
+    private float runTimePlayer;
+    private int numberOfEnemies = 6; //later change it so that the value depends on num of enemies in unity
     private int i;
-    private bool exit = false;
+    public bool exit = false;
     void Start()
     {
         finalTime = new float[numberOfEnemies]; //initialise array
-        enemyOrder = new string[5] {"Enemy (1)", "Enemy (2)", "Enemy (3)", "Enemy (4)", "Enemy (5)"}; //initialise array with names of all enemies
+        enemyOrder = new string[6] {"Enemy (1)", "Enemy (2)", "Enemy (3)", "Enemy (4)", "Enemy (5)", "Player"}; //initialise array with names of all enemies
     }
 
     // Update is called once per frame
@@ -26,13 +27,18 @@ public class DataManager : MonoBehaviour
         while (enemy <= numberOfEnemies && exit == false) {
             string enemyName = "Enemy (" + enemy + ")";
             var FinishLine = GameObject.Find(enemyName).GetComponent<FinishLine>();
+            var FinishLinePlayer = GameObject.Find("Player").GetComponent<FinishLine>();
             finish = FinishLine.passFinish; //sets finish to passFinish
+            finish = FinishLinePlayer.passFinish;
             runTime = FinishLine.levelTimer; //run time equal to the levelTimer
+            runTimePlayer = FinishLinePlayer.levelTimer;
             if (finish == true) { // only runs whilst finish line isnt crossed
                 finalTime[enemy - 1] = runTime; // store the final time for this enemy in the array
+                
                 exitCondition++;
             } 
             if (exitCondition == 5){
+                finalTime[6] = runTimePlayer;
                 exit = true;
             }
             enemy++;
