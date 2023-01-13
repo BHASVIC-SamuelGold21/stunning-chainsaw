@@ -38,7 +38,7 @@ public class DataManager : MonoBehaviour
                 exitCondition++;
             } 
             if (exitCondition == 5){
-                finalTime[6] = runTimePlayer;
+                finalTime[5] = runTimePlayer;
                 exit = true;
             }
             enemy++;
