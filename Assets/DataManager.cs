@@ -5,9 +5,15 @@ public class DataManager : MonoBehaviour
 {
     private bool finish;
     private float runTime;
+<<<<<<< Updated upstream
     private float[] finalTime;
     private int numberOfEnemies = 6; //later change it so that the value depends on num of enemies in unity
     private int i = 1;
+=======
+    private int numberOfEnemies = 5; //later change it so that the value depends on num of enemies in unity
+    private int i;
+    private int y = 5;
+>>>>>>> Stashed changes
     void Start()
     {
         finalTime = new float[numberOfEnemies]; //initialise array
@@ -25,7 +31,10 @@ public class DataManager : MonoBehaviour
                 finalTime[enemy - 1] = runTime; // store the final time for this enemy in the array
             } 
         }
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
         int i, j;
         float key;
         for (i = 1; i < finalTime.Length; i++){ // start at second element
@@ -38,6 +47,7 @@ public class DataManager : MonoBehaviour
             }
             finalTime[j + 1] = key; // insert current element into correct position
         }
+<<<<<<< Updated upstream
 
         // print sorted array to console
         for (i = 0; i < finalTime.Length; i++)
@@ -45,5 +55,8 @@ public class DataManager : MonoBehaviour
             Debug.Log(finalTime[i]);
         }
     
+=======
+        
+>>>>>>> Stashed changes
     } 
 }
