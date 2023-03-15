@@ -30,10 +30,6 @@ public class FinishLine : MonoBehaviour
         {
             passFinish = true;
             finalTimeRecorded = true;
-<<<<<<< Updated upstream
-=======
-            passFinish = true;
->>>>>>> Stashed changes
         }
     }
     private void OnTriggerEnter(Collider other) {
